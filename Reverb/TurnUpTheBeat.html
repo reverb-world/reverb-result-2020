@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="TurnUptheBeat.css">
+  <script>var countDownDate = new Date("Nov 8, 2020 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = hours + " Hours: "
+      + minutes + " Minutes: " + seconds + "Seconds";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "";
+      }
+    }, 1000);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <div class="header">
+    <div class="header-right">
+      <img href="Reverb.html" class="logo" src="logo0.png">
+       <a class="active" href="Reverb.html">Home</a>
+          <div class="dropdown">
+           <button onclick="myFunction()" class="dropbtn">Our Events</button>
+           <div id="myDropdown" class="dropdown-content">
+             <a href="#">Shake your Leg</a>
+             <a href="TurnUpTheBeat.html">Turn UP The BEAT</a>
+             <a href="#">Comming Soon...</a>
+           </div>
+           <a href="#contact">Contact</a>
+         
+        </div>
+       </div>  
+      </div>
+</head>
+<body>
+  
+  <div class="t">
+  
+  <div class="count" >
+    
+        <p id="demo"></p>
+</div>
+
+<br>
+
+<table id="t01">
+  <tr>
+    <th>Name</th>
+    <th>Points</th> 
+    <th>Rank</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.instagram.com/p/CHNeinLhntF/?utm_source=ig_web_copy_link">Kamal</a></td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+</div>
+<div>
+</body>
+<footer>
+  <div class="social-footer" height=" 100px">
+      height: 100px;
+  </div>
+</footer>
+</html>
+
