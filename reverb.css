@@ -1,13 +1,4 @@
 
-.vid
- {
-      height: 60%;
-      background-color: #e26fd3;
-      margin-top:-1%;
-      padding-bottom: 50px;
-      padding-top: 50px;
-      
-  }
 
 .text{
   font-family: 'Acme', sans-serif;
@@ -28,7 +19,7 @@
  .header {
     background-color: #8E44AD ;
     padding: 3px 0px;  
-    position:fixed;
+    position: absolute;
     top:0;
     width: 100%;
     padding: 16px;
@@ -102,7 +93,7 @@
 .logo {
   
     float:left;
-    margin-right: 20%;
+    margin-right: 25%;
     height: 60px;
     border-radius: 12px;
     
@@ -164,32 +155,7 @@
     background-color: gainsboro;
     opacity: 60%;
 }
-
-.centre
-{
-    width:50px;
-    margin: auto;
-    padding-top: 30px;
-    
-}
-.play{
-  width: 100%;
-  display:block;
-  padding-top: 250px;
-  background-size: cover;
-
-}
-.footer-img{
-  width: 500%;
-}
 #footer{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.box{
-height: 200px;
-background-color: aqua;
-padding-top: 200px ;
-margin-top: 500px;
-}
- 
